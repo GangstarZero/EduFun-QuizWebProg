@@ -10,11 +10,14 @@
                 <li class="nav-item">
                     <a class="nav-link fs-4 mx-4" href="#">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <span class="nav-link fs-4 mx-4">Category <span class="down-arrow">&#x25BC;</span></span>
+                <li class="dropdown">
+                    <button class="btn btn-secondary fs-4 mx-4 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Category</button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Data Science')">Data Science</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Network Security')">Network Security</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Data Science')">Data
+                                Science</a></li>
+                        <li><a class="dropdown-item" href="#"
+                                onclick="navigateToCategory('Network Security')">Network Security</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
