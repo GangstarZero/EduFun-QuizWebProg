@@ -24,5 +24,6 @@
 </body>
 
 @yield('extra-js')
+@include('layout.categoryJs')
 
 </html>

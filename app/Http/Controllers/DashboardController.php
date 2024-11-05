@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        $post = Post::with('writer','category')->get();
-        return view('index', compact('post'));
+        $posts = Post::with('writer','category')->get();
+        return view('index', compact('posts'));
     }
 }

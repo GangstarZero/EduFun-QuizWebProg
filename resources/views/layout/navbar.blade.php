@@ -13,8 +13,8 @@
                 <li class="nav-item dropdown">
                     <span class="nav-link fs-4 mx-4">Category <span class="down-arrow">&#x25BC;</span></span>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Data Science</a></li>
-                        <li><a class="dropdown-item" href="#">Network Security</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Data Science')">Data Science</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Network Security')">Network Security</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

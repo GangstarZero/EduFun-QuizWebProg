@@ -1,0 +1,15 @@
+.post{
+   max-width: 65rem;
+   min-width: 64rem;
+}
+
+.post-img{
+   max-width: 65rem;
+   min-width: 64rem;
+   border-radius: 15px;
+}
+
+.post-body{
+   text-align: justify;
+   white-space: pre-line;
+}
