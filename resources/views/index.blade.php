@@ -22,7 +22,7 @@
                         <p class="">{{ Str::limit($p->body, 150, '...') }}</p>
                     </div>
                     <div class="d-flex justify-content-end mt-auto p-3">
-                        <button class="btn btn-info">Read More</button>
+                        <button class="btn btn-info" data-id={{ $p->id }} onclick=redirectToPost(this)>Read More</button>
                     </div>
                 </div>
             </div>

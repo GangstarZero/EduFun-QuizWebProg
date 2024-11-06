@@ -10,6 +10,7 @@ use App\Http\Controllers\DashboardController;
 
 Route::controller(DashboardController::class)->group(function () {
     Route::get('/', 'index')->name('index');
+    Route::get('/aboutUs', 'aboutUs')->name('aboutUs');
 });
 
 Route::controller(CategoryController::class)->group(function () {

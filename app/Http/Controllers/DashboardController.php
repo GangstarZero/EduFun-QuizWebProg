@@ -12,4 +12,8 @@ class DashboardController extends Controller
         $posts = Post::with('writer','category')->get();
         return view('index', compact('posts'));
     }
+
+    public function aboutUs(){
+        return view('about');
+    }
 }
