@@ -5,19 +5,3 @@
    z-index: -1;
 }
 
-.post-box{
-   max-width: 1500px;
-   max-height: 400px; 
-   overflow: hidden; 
-   gap: 1rem;
-}
-
-.post-image{
-   max-width: 25rem;
-   border-radius: 10px;
-}
-
-.read-more{
-   min-width: 130px;
-}
-

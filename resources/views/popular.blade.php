@@ -1,15 +1,11 @@
 @extends('layout.master')
 
 @section('extra-css')
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/post.css') }}">
 @endsection
 
 @section('content')
-    <div class="mt-5 mx-5 d-flex justify-content-around">
-        <h2>{{ $category }}</h2>
-        <p></p>
-        <p></p>
-    </div>
+    <h2 class="p-2 mx-5">Popular</h2>
 
     <div class="container-fluid d-flex mt-5 justify-content-center flex-column card mb-3" style="max-width: 1500px;">
         @foreach ($posts as $p)
@@ -24,10 +20,13 @@
                         <p class="">{{ Str::limit($p->body, 150, '...') }}</p>
                     </div>
                     <div class="d-flex justify-content-end mt-auto p-3">
-                        <button class="btn btn-info" data-id={{$p->id}} onclick=redirectToPost(this)>Read More</button>
+                        <button class="btn btn-info">Read More</button>
                     </div>
                 </div>
             </div>
         @endforeach
+    </div>
+    <div class="d-flex justify-content-center">
+        {{ $posts->links() }}
     </div>
 @endsection

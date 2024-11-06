@@ -9,19 +9,23 @@
         <img src="{{ asset('assets/home-bg.jpg') }}" class="cropped-image">
     </div>
 
-    <div class="container-fluid d-flex mt-5 justify-content-center">
-        <div>
-            @foreach ($posts as $p)
-                <div class="post-box p-3 d-flex justify-content-between">
-                    <img src="{{ asset($p->asset_path) }}" class="post-image">
-                    <div>
+    <div class="container-fluid d-flex mt-5 justify-content-center flex-column card mb-3" style="max-width: 1500px;">
+        @foreach ($posts as $p)
+            <div class="p-3 row g-0">
+                <div class="col-md-4">
+                    <img src="{{ asset($p->asset_path) }}" class="img-fluid rounded-start ">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
                         <h2>{{ $p->title }}</h2>
                         <p>{{ $p->created_at->format('d F Y') }} | By: {{ $p->writer->name }} </p>
                         <p class="">{{ Str::limit($p->body, 150, '...') }}</p>
                     </div>
-                    <button class="align-self-end btn btn-info read-more">Read More</button>
+                    <div class="d-flex justify-content-end mt-auto p-3">
+                        <button class="btn btn-info">Read More</button>
+                    </div>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
 @endsection

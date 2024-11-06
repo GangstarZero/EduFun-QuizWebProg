@@ -8,11 +8,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link fs-4 mx-4" href="#">Home</a>
+                    <a class="nav-link fs-4 mx-4" href="{{ route('index') }}">Home</a>
                 </li>
-                <li class="dropdown">
-                    <button class="btn btn-secondary fs-4 mx-4 dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Category</button>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-4 mx-4" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#" onclick="navigateToCategory('Data Science')">Data
                                 Science</a></li>
@@ -21,13 +23,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-4 mx-4" href="#">Writers</a>
+                    <a class="nav-link fs-4 mx-4" href="{{ route('writer') }}">Writers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fs-4 mx-4" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-4 mx-4" href="#">Popular</a>
+                    <a class="nav-link fs-4 mx-4" href="{{ route('popular') }}">Popular</a>
                 </li>
             </ul>
         </div>

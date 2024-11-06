@@ -49,7 +49,7 @@ class PostsSeeder extends Seeder
             'assets/post/item6.jpg'
         ];
 
-        $title2 = ['Human and Computer Interaction','User Experience','User Interface'];
+        $title2 = ['Network Security Protocols','Skills for Ethical Hacker','User Interface'];
 
         for($i = 0; $i < 3; $i++) {
             Post::create([
